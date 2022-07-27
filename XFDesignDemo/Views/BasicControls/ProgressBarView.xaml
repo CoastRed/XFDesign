@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="XFDesignDemo.Views.BasicControls.ProgressBarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:XFDesignDemo.Views.BasicControls"
+             xmlns:xf="https://github.com/Coast/XFDesign"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        
+    </UserControl.Resources>
+    <Grid>
+        <UniformGrid Columns="3" Rows="2">
+            <ProgressBar Margin="20 0" Height="20" Value="120" VerticalAlignment="Center"/>
+            <ProgressBar Margin="20 0" Value="0.8" Style="{StaticResource CirProgressBar}"/>
+            <Button Content="测试" Background="AliceBlue"/>
+            <xf:CircularProgressBar RingWidth="20" Value="95" FontSize="60"/>
+            <xf:CircularProgressBar RingWidth="20" Value="60"  DisplayTextValue="DisplayMaxValue"/>
+            <xf:CircularProgressBar RingWidth="20" Value="95"  Maximum="200"
+                                    DisplayTextValue="DisplayPercentage"/>
+            
+        </UniformGrid>
+        
+    </Grid>
+</UserControl>
