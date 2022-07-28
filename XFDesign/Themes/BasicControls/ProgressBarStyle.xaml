@@ -4,21 +4,20 @@
                     xmlns:converter="clr-namespace:XFDesign.Converter">
     <converter:DoubleToProgressBarConverter x:Key="DoubleToProgressBarConverter"/>
     <Style x:Key="CirProgressBar" TargetType="ProgressBar">
-        <Setter Property="Background" Value="Orange"/>
         <Setter Property="Height" Value="200" />
         <Setter Property="Width" Value="200" />
         <Setter Property="FontSize" Value="35" />
+        <Setter Property="Background" Value="Gray"/>
+        <Setter Property="Foreground" Value="Orange" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="ProgressBar">
                     <Grid>
-                        <ed:Arc Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Fill="Gray" Opacity="0.2" ArcThickness="20"
-                                    StartAngle="0" EndAngle="360" Stretch="None">
-                            <ed:Arc.Effect>
-                                <DropShadowEffect Color="Red" BlurRadius="10" Opacity="0.8"/>
-                            </ed:Arc.Effect>
-                        </ed:Arc>
                         <ed:Arc Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Fill="{TemplateBinding Background}" ArcThickness="20"
+                                    StartAngle="0" EndAngle="360" Stretch="None">
+                            
+                        </ed:Arc>
+                        <ed:Arc Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Fill="{TemplateBinding Foreground}" ArcThickness="20"
                                     StartAngle="0" Stretch="None">
                             <ed:Arc.EndAngle>
                                 <MultiBinding Converter="{StaticResource DoubleToProgressBarConverter}">

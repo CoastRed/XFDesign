@@ -1,19 +1,33 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWPF>true</UseWPF>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<Authors>CoastRed</Authors>
+		<Description>一款基于WPF的控件库</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>WPF;Control</PackageTags>
+		<PackageReleaseNotes>增加圆形进度条</PackageReleaseNotes>
+		<Version>1.0.0.0</Version>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="NetCore5.0.Microsoft.Expression.Drawing" Version="1.0.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <Page Update="Themes\BasicControls\TextBoxStyle.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="NetCore5.0.Microsoft.Expression.Drawing" Version="1.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Page Update="Themes\BasicControls\TextBoxStyle.xaml">
+			<SubType>Designer</SubType>
+		</Page>
+	</ItemGroup>
 
 </Project>

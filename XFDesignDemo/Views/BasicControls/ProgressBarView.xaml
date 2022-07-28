@@ -12,10 +12,10 @@
     </UserControl.Resources>
     <Grid>
         <UniformGrid Columns="3" Rows="2">
-            <ProgressBar Margin="20 0" Height="20" Value="120" VerticalAlignment="Center"/>
-            <ProgressBar Margin="20 0" Value="0.8" Style="{StaticResource CirProgressBar}"/>
-            <Button Content="测试" Background="AliceBlue"/>
-            <xf:CircularProgressBar RingWidth="20" Value="95" FontSize="60"/>
+            <ProgressBar Margin="20 0" Value="0.8" Background="#dfbcc2" Style="{StaticResource CirProgressBar}"/>
+            <Button Visibility="Hidden"/>
+            <Button Visibility="Hidden"/>
+            <xf:CircularProgressBar RingWidth="20" Value="95" FontSize="60" DisplayTextValue="SingleValue"/>
             <xf:CircularProgressBar RingWidth="20" Value="60"  DisplayTextValue="DisplayMaxValue"/>
             <xf:CircularProgressBar RingWidth="20" Value="95"  Maximum="200"
                                     DisplayTextValue="DisplayPercentage"/>
