@@ -12,9 +12,9 @@
     </UserControl.Resources>
     <Grid>
         <UniformGrid Columns="3" Rows="2">
-            <ProgressBar Margin="20 0" Value="0.8" Background="#dfbcc2" Style="{StaticResource CirProgressBar}"/>
-            <Button Visibility="Hidden"/>
-            <Button Visibility="Hidden"/>
+            <ProgressBar Margin="20 0" Value="0.6" ToolTip="原生：CirProgressBar" Background="#dfbcc2" Style="{DynamicResource CirProgressBar}"/>
+            <ProgressBar Margin="20 0" Value="0.7" ToolTip="原生：CirProgressBar" Background="#dfbcc2" Style="{DynamicResource CirProgressBar}"/>
+            <ProgressBar Margin="20 0" Value="0.8" ToolTip="原生：CirProgressBar" Background="#dfbcc2" Style="{DynamicResource CirProgressBar}"/>
             <xf:CircularProgressBar RingWidth="20" Value="95" FontSize="60" DisplayTextValue="SingleValue"/>
             <xf:CircularProgressBar RingWidth="20" Value="60"  DisplayTextValue="DisplayMaxValue"/>
             <xf:CircularProgressBar RingWidth="20" Value="95"  Maximum="200"

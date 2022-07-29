@@ -11,14 +11,14 @@
         <Setter Property="Foreground" Value="Orange" />
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="ProgressBar">
+                <ControlTemplate TargetType="{x:Type ProgressBar}">
                     <Grid>
                         <ed:Arc Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Fill="{TemplateBinding Background}" ArcThickness="20"
-                                    StartAngle="0" EndAngle="360" Stretch="None">
-                            
+					StartAngle="0" EndAngle="360" Stretch="None">
+
                         </ed:Arc>
                         <ed:Arc Width="{TemplateBinding Width}" Height="{TemplateBinding Height}" Fill="{TemplateBinding Foreground}" ArcThickness="20"
-                                    StartAngle="0" Stretch="None">
+					StartAngle="0" Stretch="None">
                             <ed:Arc.EndAngle>
                                 <MultiBinding Converter="{StaticResource DoubleToProgressBarConverter}">
                                     <Binding RelativeSource="{RelativeSource AncestorType=ProgressBar}" Path="Value"/>
@@ -28,7 +28,7 @@
                             </ed:Arc.EndAngle>
                         </ed:Arc>
                         <TextBlock FontSize="{TemplateBinding FontSize}" 
-                                       Text="{Binding RelativeSource={RelativeSource AncestorType=ProgressBar}, Path=Value, StringFormat={}{0:P1}}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+					   Text="{Binding RelativeSource={RelativeSource AncestorType=ProgressBar}, Path=Value, StringFormat={}{0:P1}}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

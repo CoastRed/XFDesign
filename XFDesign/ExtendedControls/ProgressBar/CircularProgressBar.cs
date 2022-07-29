@@ -3,6 +3,9 @@ using System.Windows.Controls.Primitives;
 
 namespace XFDesign.ExtendedControls
 {
+    /// <summary>
+    /// 圆环进度条
+    /// </summary>
     public class CircularProgressBar : RangeBase
     {
         public enum CircularProgressDisplay
@@ -12,6 +15,9 @@ namespace XFDesign.ExtendedControls
             DisplayPercentage = 2,
         }
 
+        /// <summary>
+        /// 圆环的环宽度
+        /// </summary>
         public double RingWidth
         {
             get { return (double)GetValue(RingWidthProperty); }
@@ -25,6 +31,9 @@ namespace XFDesign.ExtendedControls
         public static readonly DependencyProperty RingWidthProperty =
             DependencyProperty.Register("RingWidth", typeof(double), typeof(CircularProgressBar), new PropertyMetadata(10.0));
 
+        /// <summary>
+        /// 圆环底色的透明度
+        /// </summary>
         public double BackgroundOpacity
         {
             get { return (double)GetValue(BackgroundOpacityProperty); }
@@ -35,6 +44,9 @@ namespace XFDesign.ExtendedControls
         public static readonly DependencyProperty BackgroundOpacityProperty =
             DependencyProperty.Register("BackgroundOpacity", typeof(double), typeof(CircularProgressBar), new PropertyMetadata(0.0));
 
+        /// <summary>
+        /// 圆环颜色透明度
+        /// </summary>
         public double ForegroundOpacity
         {
             get { return (double)GetValue(ForegroundOpacityProperty); }
@@ -46,6 +58,9 @@ namespace XFDesign.ExtendedControls
         public static readonly DependencyProperty ForegroundOpacityProperty =
             DependencyProperty.Register("ForegroundOpacity", typeof(double), typeof(CircularProgressBar), new PropertyMetadata(0.0));
 
+        /// <summary>
+        /// 圆环中间文本的显示模式
+        /// </summary>
         public CircularProgressDisplay DisplayTextValue
         {
             get { return (CircularProgressDisplay)GetValue(DisplayTextValueProperty); }
