@@ -31,5 +31,10 @@ namespace XFDesign.DialogWindow.DialogLoginWindow
         {
             this.user_tb.Focus();
         }
+
+        private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
     }
 }
