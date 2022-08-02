@@ -44,6 +44,14 @@ xmlns:xf="https://github.com/Coast/XFDesign"
 
 
 
-# 内容展示
+# 扩展控件展示
 
 ![image-20220729162627896](Image/image-20220729162627896.png)
+
+
+
+# 扩展窗口展示
+
+## 登录窗口
+
+![image.png](Image/1659406814441-891c0276-3fc8-4a1f-bd70-409ce7d6963b.png)
