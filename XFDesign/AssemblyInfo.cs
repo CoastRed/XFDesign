@@ -14,3 +14,4 @@ using System.Windows.Markup;
 [assembly: XmlnsDefinition("https://github.com/Coast/XFDesign", "XFDesign")]
 [assembly: XmlnsDefinition("https://github.com/Coast/XFDesign", "XFDesign")]
 [assembly: XmlnsDefinition("https://github.com/Coast/XFDesign", "XFDesign.ExtendedControls")]
+[assembly: XmlnsDefinition("https://github.com/Coast/XFDesign", "XFDesign.Helper")]

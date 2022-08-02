@@ -19,7 +19,6 @@
             <xf:CircularProgressBar RingWidth="20" Value="60"  DisplayTextValue="DisplayMaxValue"/>
             <xf:CircularProgressBar RingWidth="20" Value="95"  Maximum="200"
                                     DisplayTextValue="DisplayPercentage"/>
-            
         </UniformGrid>
         
     </Grid>
