@@ -135,6 +135,23 @@
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
                                 VerticalAlignment="Center" Height="60" Margin="17 0">
                                     <StackPanel Margin="15 0 0 0" VerticalAlignment="Center">
+                                        <TextBlock Text="数据展示" FontSize="24" Foreground="White" FontWeight="Bold"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Expander.Header>
+                            <Expander.Content>
+                                <StackPanel>
+                                    <Button Height="40" Width="180" Margin="10 5" HorizontalAlignment="Center"
+                                 Content="卡片信息" Foreground="White" FontSize="18" Command="{Binding NavigateCommand}" CommandParameter="InfoCardView">
+                                    </Button>
+                                </StackPanel>
+                            </Expander.Content>
+                        </Expander>
+                        <Expander Margin="5">
+                            <Expander.Header>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left"
+                                VerticalAlignment="Center" Height="60" Margin="17 0">
+                                    <StackPanel Margin="15 0 0 0" VerticalAlignment="Center">
                                         <TextBlock Text="消息中心" FontSize="24" Foreground="White" FontWeight="Bold"/>
                                     </StackPanel>
                                 </StackPanel>
@@ -147,6 +164,7 @@
                                 </StackPanel>
                             </Expander.Content>
                         </Expander>
+                        
                     </StackPanel>
                 </Border>
             </StackPanel>

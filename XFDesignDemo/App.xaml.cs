@@ -48,6 +48,7 @@ namespace XFDesignDemo
             containerRegistry.RegisterForNavigation<ProgressBarView>();
             containerRegistry.RegisterForNavigation<TabControlView>();
 
+            containerRegistry.RegisterForNavigation<InfoCardView>();
             containerRegistry.RegisterForNavigation<DataGridView>();
 
             containerRegistry.RegisterForNavigation<DialogLoginWindowView, DialogLoginWindowViewModel>();
