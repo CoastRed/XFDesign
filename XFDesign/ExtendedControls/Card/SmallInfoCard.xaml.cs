@@ -56,55 +56,32 @@ namespace XFDesign.ExtendedControls
         public static readonly DependencyProperty NumberProperty = DependencyProperty.Register("Number", typeof(string), typeof(SmallInfoCard));
 
         /// <summary>
-        /// 卡片背景颜色1
+        /// 卡片背景颜色
         /// </summary>
-        public Color Background1
+        public Brush BorderBackground
         {
-            get { return (Color)GetValue(Background1Property); }
-            set { SetValue(Background1Property, value); }
+            get { return (Brush)GetValue(BorderBackgroundProperty); }
+            set { SetValue(BorderBackgroundProperty, value); }
         }
         /// <summary>
-        /// 卡片背景颜色1
+        /// 卡片背景颜色
         /// </summary>
-        public static readonly DependencyProperty Background1Property = DependencyProperty.Register("Background1", typeof(Color), typeof(SmallInfoCard));
+        public static readonly DependencyProperty BorderBackgroundProperty = DependencyProperty.Register("BorderBackground", typeof(Brush), typeof(SmallInfoCard));
 
-        /// <summary>
-        /// 卡片背景颜色2
-        /// </summary>
-        public Color Background2
-        {
-            get { return (Color)GetValue(Background2Property); }
-            set { SetValue(Background2Property, value); }
-        }
-        /// <summary>
-        /// 卡片背景颜色2
-        /// </summary>
-        public static readonly DependencyProperty Background2Property = DependencyProperty.Register("Background2", typeof(Color), typeof(SmallInfoCard));
 
-        /// <summary>
-        /// 卡片上圆的背景颜色1
+        // <summary>
+        /// 卡片上圆的背景颜色
         /// </summary>
-        public Color EllipseBackground1
+        public Brush EllipseBackground
         {
-            get { return (Color)GetValue(EllipseBackground1Property); }
-            set { SetValue(EllipseBackground1Property, value); }
+            get { return (Brush)GetValue(EllipseBackgroundProperty); }
+            set { SetValue(EllipseBackgroundProperty, value); }
         }
-        /// <summary>
-        /// 卡片上圆的背景颜色1
-        /// </summary>
-        public static readonly DependencyProperty EllipseBackground1Property = DependencyProperty.Register("EllipseBackground1", typeof(Color), typeof(SmallInfoCard));
 
-        /// <summary>
-        /// 卡片上圆的背景颜色2
+        // <summary>
+        /// 卡片上圆的背景颜色
         /// </summary>
-        public Color EllipseBackground2
-        {
-            get { return (Color)GetValue(EllipseBackground2Property); }
-            set { SetValue(EllipseBackground2Property, value); }
-        }
-        /// <summary>
-        /// 卡片上圆的背景颜色2
-        /// </summary>
-        public static readonly DependencyProperty EllipseBackground2Property = DependencyProperty.Register("EllipseBackground2", typeof(Color), typeof(SmallInfoCard));
+        public static readonly DependencyProperty EllipseBackgroundProperty =
+            DependencyProperty.Register("EllipseBackground", typeof(Brush), typeof(SmallInfoCard));
     }
 }

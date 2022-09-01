@@ -127,6 +127,9 @@
                                     <Button Height="40" Width="180" Margin="10 5" HorizontalAlignment="Center"
                                  Content="DataGrid" Foreground="White" FontSize="18" Command="{Binding NavigateCommand}" CommandParameter="DataGridView">
                                     </Button>
+                                    <Button Height="40" Width="180" Margin="10 5" HorizontalAlignment="Center"
+                                 Content="Slider" Foreground="White" FontSize="18" Command="{Binding NavigateCommand}" CommandParameter="SliderView">
+                                    </Button>
                                 </StackPanel>
                             </Expander.Content>
                         </Expander>

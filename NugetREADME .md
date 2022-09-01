@@ -43,7 +43,3 @@ xmlns:xf="https://github.com/Coast/XFDesign"
 ```
 
 
-
-# 内容展示
-
-![image-20220729162627896](Image/image-20220729162627896.png)

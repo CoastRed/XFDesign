@@ -6,11 +6,38 @@
              xmlns:local="clr-namespace:XFDesignDemo.Views.DataDisplay"
              xmlns:xf="https://github.com/Coast/XFDesign"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="1000">
     <StackPanel Margin="20 50 0 0">
         <UniformGrid Columns="2">
-            <xf:SmallInfoCard Title="Total Views" Number="654,947" Background1="#827bff" Background2="#d9b5ff" EllipseBackground1="#b298fd" EllipseBackground2="#e4bbff"/>
-            <xf:SmallInfoCard Title="Total Orders" Number="192,320" Background1="#fd8a87" Background2="#f3ab92" EllipseBackground1="#fbd5a8" EllipseBackground2="#fdb89b"/>
+            <xf:SmallInfoCard Title="物品总数" Number="654,947">
+                <xf:SmallInfoCard.BorderBackground>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#827bff" Offset="0"/>
+                        <GradientStop Color="#d9b5ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </xf:SmallInfoCard.BorderBackground>
+                <xf:SmallInfoCard.EllipseBackground>
+                    <LinearGradientBrush StartPoint="1 0" EndPoint="0 1">
+                        <GradientStop Color="#b298fd" Offset="0"/>
+                        <GradientStop Color="#e4bbff" Offset="1"/>
+                    </LinearGradientBrush>
+                </xf:SmallInfoCard.EllipseBackground>
+            </xf:SmallInfoCard>
+
+            <xf:SmallInfoCard Title="物品种类" Number="654,947">
+                <xf:SmallInfoCard.BorderBackground>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#fd8a87" Offset="0"/>
+                        <GradientStop Color="#f3ab92" Offset="1"/>
+                    </LinearGradientBrush>
+                </xf:SmallInfoCard.BorderBackground>
+                <xf:SmallInfoCard.EllipseBackground>
+                    <LinearGradientBrush StartPoint="1 0" EndPoint="0 1">
+                        <GradientStop Color="#fbd5a8" Offset="0"/>
+                        <GradientStop Color="#fdb89b" Offset="1"/>
+                    </LinearGradientBrush>
+                </xf:SmallInfoCard.EllipseBackground>
+            </xf:SmallInfoCard>
         </UniformGrid>
         
     </StackPanel>

@@ -46,7 +46,21 @@ xmlns:xf="https://github.com/Coast/XFDesign"
 
 # 扩展控件展示
 
+## ProgressBar
+
 ![image-20220729162627896](Image/image-20220729162627896.png)
+
+
+
+## Slider
+
+![image.png](Image/1662014612740-4de407b3-efc4-40be-88c6-ce5384697422.png)
+
+# 数据展示控件
+
+## SmallInfoCard
+
+![image.png](Image/1662014740370-cca61f38-d13e-4545-b797-7d796de5e921.png)
 
 
 
