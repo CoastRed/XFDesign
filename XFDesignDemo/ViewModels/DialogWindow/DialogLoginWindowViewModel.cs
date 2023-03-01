@@ -6,7 +6,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 using XFDesign.DialogWindow.DialogLoginWindow.Interface;
+using XFDesign.MessageBox;
 
 namespace XFDesignDemo.ViewModels.DialogWindow
 {
@@ -33,5 +35,34 @@ namespace XFDesignDemo.ViewModels.DialogWindow
             }
         }
 
+        public DelegateCommand<string> MessageBoxCommand
+        {
+            get
+            {
+                return new DelegateCommand<string>(str =>
+                {
+                    if (str == "提示")
+                    {
+                        MessageBoxXF.Info("收到一则提示消息");
+                    }
+                    if (str == "警告")
+                    {
+                        MessageBoxXF.Warning("收到一则警告消息");
+                    }
+                    if (str == "错误")
+                    {
+                        MessageBoxXF.Error("收到一则错误消息");
+                    }
+                    if (str == "询问")
+                    {
+                        MessageBoxXF.Question("收到一则询问消息");
+                    }
+                    if (str == "成功")
+                    {
+                        MessageBoxXF.Error("收到一则成功消息");
+                    }
+                });
+            }
+        }
     }
 }

@@ -6,7 +6,12 @@
              xmlns:local="clr-namespace:XFDesignDemo.Views.DialogWindow"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <UniformGrid Rows="3">
+    <UniformGrid Rows="3" Columns="3">
         <Button Content="添加登录窗口" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Command="{Binding DialogLoginWindowCommand}"/>
+        <Button Content="提示信息" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Command="{Binding MessageBoxCommand}" CommandParameter="提示"/>
+        <Button Content="警告信息" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Command="{Binding MessageBoxCommand}" CommandParameter="警告"/>
+        <Button Content="错误信息" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Command="{Binding MessageBoxCommand}" CommandParameter="错误"/>
+        <Button Content="询问信息" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Command="{Binding MessageBoxCommand}" CommandParameter="询问"/>
+        <Button Content="成功信息" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Command="{Binding MessageBoxCommand}" CommandParameter="成功"/>
     </UniformGrid>
 </UserControl>

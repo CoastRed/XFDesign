@@ -69,9 +69,9 @@ namespace XFDesign.ExtendedControls
         public static readonly DependencyProperty BorderBackgroundProperty = DependencyProperty.Register("BorderBackground", typeof(Brush), typeof(SmallInfoCard));
 
 
-        // <summary>
+        /// <summary>
         /// 卡片上圆的背景颜色
-        /// </summary>
+        ///</summary>
         public Brush EllipseBackground
         {
             get { return (Brush)GetValue(EllipseBackgroundProperty); }

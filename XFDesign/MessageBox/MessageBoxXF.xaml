@@ -1,0 +1,73 @@
+﻿<Window x:Class="XFDesign.MessageBox.MessageBoxXF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:local="clr-namespace:XFDesign.MessageBox"
+        xmlns:behavior="clr-namespace:XFDesign_Shared.Behaviors"
+        xmlns:fa="http://schemas.fontawesome.com/icons/svg"
+        mc:Ignorable="d" WindowStartupLocation="CenterOwner" WindowStyle="None" AllowsTransparency="True"
+        Title="MessageBoxXF" d:Height="400" d:Width="600" Background="Transparent"
+         >
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Background" Value="#f0f8ff" />
+            <Setter Property="FontSize" Value="25" />
+            <Setter Property="Padding" Value="25 5" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Margin" Value="20 5" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="White" Opacity="0.15"/>
+        <Border Grid.Row="1" Background="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}, Path=(behavior:XFBackgroundAttach.XFBackground)}" Opacity="0.9">
+            <DockPanel LastChildFill="True" Grid.Column="1">
+                <TextBlock x:Name="tb_caption" Visibility="Collapsed" Text="窗口标题" DockPanel.Dock="Top" Margin="60 0" Foreground="White" VerticalAlignment="Center" FontSize="25"/>
+                <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Center" Button.Click="StackPanel_Click">
+                    <Button x:Name="btn_Ok" Content="确认" Tag="OK">
+                        <!--<i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:CallMethodAction MethodName="Close" TargetObject="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>-->
+                    </Button>
+                    <Button x:Name="btn_Retry" Content="重试" Tag="Retry">
+                        <!--<i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:CallMethodAction MethodName="Close" TargetObject="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>-->
+                    </Button>
+                    <Button x:Name="btn_Cancel" Content="取消" Tag="Cancel">
+                        <!--<i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <i:CallMethodAction MethodName="Close" TargetObject="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>-->
+                    </Button>
+                </StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <fa:SvgAwesome x:Name="image" PrimaryColor="White" Width="100" Icon="Solid_CircleInfo" HorizontalAlignment="Right"/>
+                    <TextBlock x:Name="tb_msg" Grid.Column="1" Margin="50 10" TextWrapping="WrapWithOverflow" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35"/>
+                </Grid>
+                
+            </DockPanel>
+
+        </Border>
+        <Border Grid.Row="2" Background="White" Opacity="0.2"/>
+    </Grid>
+</Window>
